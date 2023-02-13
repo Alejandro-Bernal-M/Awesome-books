@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.add-form, 
+.books-holder {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
