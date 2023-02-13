@@ -3,10 +3,25 @@
   margin: 0;
   padding: 0;
 }
-
-.add-form, 
+.add-form,
 .books-holder {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  justify-content: flex-start;
 }
+.button-remove {
+  width: 50px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
