@@ -43,13 +43,13 @@ class Library {
     if (localStorage.getItem('book') != null) {
       const storage = JSON.parse(localStorage.getItem('book'));
       storage.forEach((element) => {
-        this.lenght += 1;
+        this.lenght = count;
         const newDiv = document.createElement('div');
         const itemTitle = element.title;
         const itemAuthor = element.author;
         const newUl = document.createElement('ul');
         const liTitle = document.createElement('li');
-        liTitle.textContent = itemTitle;
+        liTitle.innerHTML = `"${itemTitle}"`;
         newUl.appendChild(liTitle);
         const liby = document.createElement('li');
         liby.textContent = 'by';
@@ -59,15 +59,15 @@ class Library {
         newUl.appendChild(liAuthor);
         newDiv.appendChild(newUl);
         const newButton = document.createElement('button');
-        newButton.innerHTML = 'remove';
+        newButton.innerHTML = 'Remove';
         newButton.setAttribute('class', 'button-remove');
         newButton.setAttribute('id', count);
         newDiv.appendChild(newButton);
         newDiv.classList.add('books-div');
         if (this.lenght % 2 === 0) {
-          newDiv.classList.add('bg-white');
-        } else {
           newDiv.classList.add('bg-gray');
+        } else {
+          newDiv.classList.add('bg-white');
         }
         booksHolder.appendChild(newDiv);
         count += 1;
