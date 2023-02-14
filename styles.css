@@ -12,12 +12,6 @@
   justify-content: flex-start;
 }
 
-.button-remove {
-  width: 50px;
-  height: 20px;
-  margin-bottom: 10px;
-}
-
 h1 {
   font-family: 'Lucida Sans', sans-serif;
   font-size: 2rem;
@@ -25,11 +19,13 @@ h1 {
   margin: 20px auto;
   width: 80%;
 }
+
 .books-holder {
   width: 95%;
   margin: 0 auto;
   border: 3px solid black;
 }
+
 .books-div {
   display: flex;
   width: 100%;
@@ -38,20 +34,25 @@ h1 {
   padding: 2px 10px;
   align-items: center;
 }
+
 .books-div > ul {
   list-style: none;
   display: flex;
   align-items: center;
 }
+
 .books-div > ul > li {
   margin: 0 5px;
 }
+
 .bg-gray {
   background-color: lightgray;
 }
+
 .bg-white {
   background-color: white;
 }
+
 .button-remove {
   height: 23px;
   width: 70px;
@@ -60,6 +61,7 @@ h1 {
   padding: 1px;
   margin: 0;
 }
+
 .hr-form {
   margin: 20px auto;
   width: 130px;
@@ -68,12 +70,14 @@ h1 {
   background: black;
   color: black;
 }
+
 h2 {
   text-align: center;
   width: 80%;
   margin: 15px auto;
   font-family: 'Lucida Sans', sans-serif;
 }
+
 .add-form {
   width: 270px;
   height: auto;
@@ -81,17 +85,20 @@ h2 {
   gap: 10px;
   align-items: flex-end;
 }
-.add-form > label> input {
+
+.add-form > label > input {
   width: 270px;
   border: 2px solid black;
   padding: 3px;
 }
+
 #submit {
   background: white;
   width: 50px;
   height: 20px;
   border: 2px solid black;
 }
+
 #submit,
 .button-remove {
   box-shadow: 3px 3px 3px black;
