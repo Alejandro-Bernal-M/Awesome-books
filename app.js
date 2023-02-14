@@ -40,13 +40,19 @@ class Library {
 
   construc() {
     let count = 0;
-    if (localStorage.getItem('book') != null) {
+    if (localStorage.getItem('book') !== '[]') {
       const storage = JSON.parse(localStorage.getItem('book'));
       storage.forEach((element) => {
         this.lenght = count;
         const newDiv = document.createElement('div');
-        const itemTitle = element.title;
-        const itemAuthor = element.author;
+        let itemTitle = element.title;
+        let itemAuthor = element.author;
+        if (element.title === '') {
+          itemTitle = 'Title';
+        }
+        if (element.author === '') {
+          itemAuthor = 'Author';
+        }
         const newUl = document.createElement('ul');
         const liTitle = document.createElement('li');
         liTitle.innerHTML = `"${itemTitle}"`;
@@ -81,6 +87,29 @@ class Library {
           this.construc();
         });
       });
+    } else {
+      const newDiv = document.createElement('div');
+      const itemTitle = 'Example book';
+      const itemAuthor = 'Example author.  This is an example text that will be deleted when you add a book ';
+      const newUl = document.createElement('ul');
+      const liTitle = document.createElement('li');
+      liTitle.innerHTML = `"${itemTitle}"`;
+      newUl.appendChild(liTitle);
+      const liby = document.createElement('li');
+      liby.textContent = 'by';
+      newUl.appendChild(liby);
+      const liAuthor = document.createElement('li');
+      liAuthor.textContent = itemAuthor;
+      newUl.appendChild(liAuthor);
+      newDiv.appendChild(newUl);
+      const newButton = document.createElement('button');
+      newButton.innerHTML = 'Remove';
+      newButton.setAttribute('class', 'button-remove');
+      newButton.setAttribute('id', count);
+      newDiv.appendChild(newButton);
+      newDiv.classList.add('books-div');
+      newDiv.classList.add('bg-gray');
+      booksHolder.appendChild(newDiv);
     }
   }
 }
