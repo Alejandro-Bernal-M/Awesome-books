@@ -51,6 +51,9 @@ class Library {
         const liTitle = document.createElement('li');
         liTitle.textContent = itemTitle;
         newUl.appendChild(liTitle);
+        const liby = document.createElement('li');
+        liby.textContent = 'by';
+        newUl.appendChild(liby);
         const liAuthor = document.createElement('li');
         liAuthor.textContent = itemAuthor;
         newUl.appendChild(liAuthor);
