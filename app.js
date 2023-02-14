@@ -63,8 +63,6 @@ class Library {
         newButton.setAttribute('class', 'button-remove');
         newButton.setAttribute('id', count);
         newDiv.appendChild(newButton);
-        const newHr = document.createElement('hr');
-        newDiv.appendChild(newHr);
         newDiv.classList.add('books-div');
         if (this.lenght % 2 === 0) {
           newDiv.classList.add('bg-white');
