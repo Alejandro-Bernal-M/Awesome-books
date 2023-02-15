@@ -90,7 +90,7 @@ CSS/HTML/JavaScript
 
 ### Setup
 
-Just copy and paste what you need but be sure to understand.
+Open the page, go to the "Add" in the Navigation bar, there you can add books to the list writing the name and the author in the input fiel and clicking in the button "Add". Go to "List" in the navigation bar and there you can see the list of books, you can remove the book that you want from there by clicking in the button "Remove"
 
 
 ### Install
