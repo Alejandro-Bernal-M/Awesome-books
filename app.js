@@ -123,6 +123,55 @@ form.addEventListener('submit', (e) => {
   form.reset();
 });
 
+const date = document.querySelector('.date');
+
+function displayTime() {
+  const currentDate = new Date();
+  date.textContent = currentDate;
+}
+
+setInterval(displayTime, 1000);
+
+const liList = document.querySelector('.a-list');
+const liAdd = document.querySelector('.a-add');
+const liContact = document.querySelector('.a-contact');
+const sectionList = document.querySelector('.list');
+const sectionAdd = document.querySelector('.add');
+const sectionContact = document.querySelector('.contact');
+
+liList.addEventListener('click', () => {
+  liList.style.color = 'rgb(26, 111, 126)';
+  liAdd.style.color = 'black';
+  liContact.style.color = 'black';
+  sectionList.classList.remove('hide');
+  sectionAdd.classList.add('hide');
+  sectionContact.classList.add('hide');
+});
+
+liAdd.addEventListener('click', () => {
+  liAdd.style.color = 'rgb(26, 111, 126)';
+  liList.style.color = 'black';
+  liContact.style.color = 'black';
+  sectionList.classList.add('hide');
+  sectionAdd.classList.remove('hide');
+  sectionContact.classList.add('hide');
+});
+
+liContact.addEventListener('click', () => {
+  liContact.style.color = 'rgb(26, 111, 126)';
+  liList.style.color = 'black';
+  liAdd.style.color = 'black';
+  sectionList.classList.add('hide');
+  sectionAdd.classList.add('hide');
+  sectionContact.classList.remove('hide');
+});
+
 window.addEventListener('load', () => {
   library1.construc();
+  liList.style.color = 'rgb(26, 111, 126)';
+  liAdd.style.color = 'black';
+  liContact.style.color = 'black';
+  sectionList.classList.remove('hide');
+  sectionAdd.classList.add('hide');
+  sectionContact.classList.add('hide');
 });

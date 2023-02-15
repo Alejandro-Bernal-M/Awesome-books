@@ -1,20 +1,22 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+}
+
+html {
   padding: 0;
+  margin: 0;
 }
 
 .add-form,
 .books-holder {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
   justify-content: flex-start;
 }
 
 h1 {
   font-family: 'Lucida Sans', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   margin: 20px auto;
   width: 80%;
@@ -39,6 +41,8 @@ h1 {
   list-style: none;
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .books-div > ul > li {
@@ -72,22 +76,23 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   width: 80%;
-  margin: 15px auto;
   font-family: 'Lucida Sans', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .add-form {
-  width: 270px;
+  width: 300px;
   height: auto;
-  margin: 0 auto;
-  gap: 10px;
+  gap: 20px;
   align-items: flex-end;
+  margin-top: 30px;
 }
 
 .add-form > label > input {
-  width: 270px;
+  width: 300px;
+  height: 35px;
   border: 2px solid black;
   padding: 3px;
 }
@@ -102,4 +107,99 @@ h2 {
 #submit,
 .button-remove {
   box-shadow: 3px 3px 3px black;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  height: 44px;
+  top: 5px;
+  margin: 10px auto;
+  border: 3px solid black;
+  position: fixed;
+  padding: 0 20px;
+}
+
+.nav-a,
+.li-nav > a {
+  text-decoration: none;
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ul-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+}
+
+.li-nav {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.li-add {
+  border-left: 1px solid rgb(26, 111, 126);
+  border-right: 1px solid rgb(26, 111, 126);
+  width: 82px;
+}
+
+.date {
+  display: inline;
+  position: relative;
+  top: 54px;
+  margin: 0;
+}
+
+section {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.contact {
+  padding: 0 20%;
+}
+
+.contact-p {
+  width: 50%;
+}
+
+.contact-information {
+  width: 50%;
+}
+
+.footer {
+  width: 98%;
+  height: 40px;
+  border: 2px solid black;
+  bottom: 5px;
+  position: absolute;
+  padding: 7px;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
 }

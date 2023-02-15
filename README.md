@@ -29,7 +29,7 @@
 # 📖 [Awesome books] <a name="about-project"></a>
 
 
-**[Awesome books]** is a project where we did a dinamic list of books by using JavaScript.
+**[Awesome books]** is a project where we did a Single Page App using JavaScript, All the content is on one html file, but it is hidden until you press the button on the navigation bar, then JavaScript handle the content to display the right one. You can add books to the list and remove them from the list by clicking in the button "Remove". 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -60,8 +60,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-
 - **[Dinamic]**
+- **[SPA]**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -89,7 +90,7 @@ CSS/HTML/JavaScript
 
 ### Setup
 
-Just copy and paste what you need but be sure to understand.
+Open the page, go to the "Add" in the Navigation bar, there you can add books to the list writing the name and the author in the input fiel and clicking in the button "Add". Go to "List" in the navigation bar and there you can see the list of books, you can remove the book that you want from there by clicking in the button "Remove"
 
 
 ### Install
@@ -98,7 +99,7 @@ There is no need to install anything
 
 ### Usage
 
-Just copy and paste what you need but be sure to understand.
+Add books to the list by writing in the form and clicking in the "Add" button. Remove items from the list by clicking in the "Remove" button
 
 
 
@@ -118,8 +119,6 @@ Just open it in your browser.
 ## 👥 Authors <a name="authors"></a>
 
 > Mention all of the collaborators of this project.
-
-👤 **Author1**
 
 👤 **Alejandro Bernal Marin**
 
