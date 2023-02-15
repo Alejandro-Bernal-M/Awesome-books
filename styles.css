@@ -203,3 +203,40 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
+@media screen and (max-width: 768px) {
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  header {
+    align-items: unset;
+  }
+
+  .nav-bar {
+    width: 98%;
+    position: relative;
+    margin: 0;
+  }
+
+  .date {
+    top: 14px;
+  }
+
+  .footer {
+    width: 95%;
+  }
+
+  h2,
+  .contact-p,
+  .contact-information {
+    width: 100%;
+  }
+}
